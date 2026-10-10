@@ -1,0 +1,63 @@
+/* DailyPulse policy pages. Uses the site's colors from styles.css. */
+.legal {
+  max-width: 720px;
+  color: var(--text-mid);
+  font-size: 16px;
+  line-height: 1.7;
+}
+.legal h2 {
+  font-family: var(--font-display);
+  color: var(--ink-strong);
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin: 2.5rem 0 0.75rem;
+}
+.legal h3 {
+  color: var(--ink-strong);
+  font-size: 1.1rem;
+  margin: 2rem 0 0.5rem;
+}
+.legal p { margin: 0 0 1rem; }
+.legal ul { margin: 0 0 1rem 1.25rem; }
+.legal li { margin-bottom: 0.5rem; }
+.legal strong { color: var(--text); }
+.legal a { color: var(--tag-ink); text-underline-offset: 3px; }
+.legal a:hover { color: var(--orange); }
+
+.legal .legal-tabs {
+  list-style: none;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.legal .legal-tabs li { margin: 0; }
+.legal .legal-tabs a {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+.legal .legal-tabs a[aria-current="page"] {
+  background: var(--tag-bg);
+  border-color: transparent;
+  color: var(--ink-strong);
+}
+
+.legal-table { overflow-x: auto; margin: 0 0 1.25rem; }
+.legal table { border-collapse: collapse; width: 100%; font-size: 15px; }
+.legal th, .legal td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+.legal th { color: var(--ink-strong); font-weight: 600; }
+
+@media (max-width: 600px) {
+  .legal table { font-size: 14px; }
+  .legal th, .legal td { padding: 8px; }
+}

@@ -769,3 +769,47 @@
 main > section > .services-grid:first-child,
 main > section > .situations-grid:first-child,
 main > section > .how-grid:first-child { margin-top: 0; }
+
+/* ===== Service and location landing pages ===== */
+.prose { max-width: 760px; }
+.prose h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.25;
+  margin: 44px 0 14px;
+}
+.prose h2:first-of-type { margin-top: 8px; }
+.prose p, .prose li { font-size: 1.05rem; color: var(--text-mid); line-height: 1.8; }
+.prose p + p { margin-top: 14px; }
+.prose ul { margin: 6px 0 0 22px; display: grid; gap: 8px; }
+.prose li::marker { color: var(--orange); }
+.prose a:not(.btn-primary) { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--orange); }
+.prose a:not(.btn-primary):hover { color: var(--orange); }
+.breadcrumbs { font-size: 0.82rem; color: var(--text-light); margin-bottom: 28px; }
+.breadcrumbs a { color: var(--text-light) !important; border-bottom: none !important; }
+.breadcrumbs a:hover { color: var(--orange) !important; }
+.faq { border-top: 1px solid var(--border); }
+.faq-item { border-bottom: 1px solid var(--border); padding: 18px 0; }
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 1.02rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; color: var(--orange); font-weight: 700; font-size: 1.2rem; line-height: 1; }
+.faq-item[open] summary::after { content: '\2212'; }
+.faq-item p { margin-top: 10px; font-size: 0.98rem; }
+.prose-cta { margin-top: 40px; }
+.footer-services { display: flex; gap: 8px 22px; flex-wrap: wrap; list-style: none; flex-basis: 100%; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 18px; }
+.footer-services a { font-size: 0.78rem; color: rgba(255,255,255,0.5); text-decoration: none; }
+.footer-services a:hover { color: var(--orange-light); }
+.home-links { margin-top: 32px; font-size: 0.9rem; color: var(--text-light); max-width: 1100px; line-height: 2; }
+.home-links a { color: var(--text-mid); text-decoration: none; border-bottom: 1px solid var(--orange); }
+.home-links a:hover { color: var(--orange); }
